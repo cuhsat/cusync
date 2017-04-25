@@ -1,0 +1,6 @@
+README
+.rsync/backup
+.rsync/log
+.DS_Store
+.git*
+~*
