@@ -1,11 +1,14 @@
 cusync
 ======
-A bidirectional rsync script. Mostly extracted and exaggerated from the rsync man page.
+A bidirectional rsync script.
 
-> Before first use, please open the Makefile and replace the `<YOUR SERVER HERE>` tag.
+Mostly extracted and exaggerated from an example in the rsync man-page.
 
 Usage
 -----
 ```
-$ make sync
+$ make [get|put|sync|purge]
 ```
+
+> Before first use, please open the `Makefile` and replace the 
+> `<YOUR SERVER HERE>` tag with your real login/server address.
