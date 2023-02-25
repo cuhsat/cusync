@@ -15,10 +15,10 @@ RSYNC_ARGS=-azhuP --rsh=ssh --stats --delete-before --exclude-from=$(RSYNC_IGNOR
 purge :
 	@rm -rf	$(RSYNC_BACKUP)/*
 
-get :
+pull :
 	@$(RSYNC) $(RSYNC_ARGS) $(RSYNC_HOST) $(RSYNC_PATH) >> $(RSYNC_LOG)
 
-put :
+push :
 	@$(RSYNC) $(RSYNC_ARGS) $(RSYNC_PATH) $(RSYNC_HOST) >> $(RSYNC_LOG)
 
-sync : get put
+sync : pull push
