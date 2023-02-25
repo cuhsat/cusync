@@ -7,7 +7,7 @@ Mostly extracted and exaggerated from an example in the rsync man-page.
 Usage
 -----
 ```
-$ make [get|put|sync|purge]
+$ make [pull|push|sync|purge]
 ```
 
 > Before first use, please open the `Makefile` and replace the 
